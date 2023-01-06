@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#card {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    width: calc(100vw - 350px);
+    height: calc(100vh - 180px);
+    background-color: black;
+    border-radius: 2rem;
+}
+
+#card-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 40px 50px;
+    background-color: hsl(31, 77%, 52%);
+    flex: 1;
+   
+}
+#card-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 40px 50px;
+    background-color: hsl(184, 100%, 22%);
+    flex: 1;
+    
+}
+#card-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 40px 50px;
+    background-color: hsl(179, 100%, 13%);
+    flex: 1;
+}
+
+h1 {
+    color: white;
+    font-weight: 700;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+p {
+    line-height: 1.6rem;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+button {
+    border: 2px solid white;
+    background: white;
+    border-radius: 40px;
+    padding: 10px 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+
+#b1 {
+    color: hsl(31, 77%, 52%);
+}
+#b2 {
+    color: hsl(184, 100%, 22%);
+}
+
+#b3 {
+    color: hsl(179, 100%, 13%);
+}
+
+#b1:hover, #b2:hover, #b3:hover {
+    cursor: pointer;
+    background: none;
+    color: white;
+    border: 2px solid white;
+}
+
+@media (max-width: 600px)
+{
+    #card {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        width: calc(100vw - 50px);
+        height: calc(100vh - 180px);
+        background-color: black;
+        border-radius: 2rem;
+    }
+    
+    h1 {
+        font-size: 15px;
+        color: white;
+        font-weight: 700;
+        font-family: 'Big Shoulders Display', cursive;
+    }
+    
+    p {
+        font-size: 10px;
+        line-height: 1.6rem;
+        color: white;
+        font-family: 'Lexend Deca', sans-serif;
+    }
+}
